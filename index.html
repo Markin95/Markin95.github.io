@@ -3,56 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcos Ferreira | Desenvolvedor Full-Stack</title>
+    <title>Marcos Ferreira Jr. | Desenvolvedor Full-Stack</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <nav>
-            <div class="logo">Marcos Ferreira</div>
-            <ul>
-                <li><a href="#about">Sobre Mim</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Marcos Ferreira Jr.</h1>
+            <p>Desenvolvedor Full-Stack em Formação</p>
+        </div>
     </header>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <img src="assets/sua-foto.jpg" alt="Foto de Marcos Ferreira" class="hero-pic">
-                <div class="hero-text">
-                    <h1>Olá, eu sou o Marcos Ferreira</h1>
-                    <p>Desenvolvedor Full-Stack em formação</p>
+    <main class="container">
+        <section id="about" class="card hidden">
+            <div class="about-content">
+                <img src="sua-foto.jpg" alt="Foto de Marcos Ferreira Jr." class="profile-pic">
+                <div class="about-text">
+                    <h2>Sobre Mim</h2>
+                    <p>
+                        Sou um desenvolvedor Full-Stack apaixonado por tecnologia e pela criação de soluções web completas. Como estudante de Análise e Desenvolvimento de Sistemas na UEPB, enfrento novos desafios com <strong>coragem</strong> e dedicação, buscando sempre aprender e evoluir. Acredito que a <strong>paciência</strong> é fundamental para resolver problemas complexos e entregar um código limpo e eficiente.
+                    </p>
+                    <p>
+                        No ambiente de trabalho, valorizo a comunicação clara e o trabalho em equipe, buscando ser um colega <strong>amigável</strong> e <strong>compreensível</strong>. Meu objetivo é encontrar uma oportunidade de estágio onde eu possa aplicar minhas habilidades em JavaScript, Python, React e Node.js, e contribuir de forma significativa para projetos inovadores.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section id="about">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-text">
-                <p>
-                    Olá! Sou um desenvolvedor Full-Stack apaixonado por tecnologia. Estudei meu ensino Médio no Colégio da Polícia Militar, sou um homem disciplinado e cheio de objetivos. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas na Universidade Estadual da Paraíba (UEPB). Minha abordagem para resolver problemas é movida pela <strong>paciência</strong> e pela busca de soluções criativas, transformando desafios complexos em aplicações web funcionais. Tenho experiência prática com JavaScript, Python, React e Node.js.
-                </p>
-                <p>
-                    Sou  <strong>Forte</strong> e <strong>Corajoso</strong>, sempre pronto para explorar novas tecnologias e colaborar de forma <strong>compreensiva</strong> em equipe. Busco ativamente uma oportunidade de estágio onde eu possa não apenas aplicar meu conhecimento técnico, mas também crescer profissionalmente e contribuir de forma significativa para projetos inovadores. Vamos nos conectar e construir algo incrível juntos!
-                </p>
+        <section id="info" class="card hidden">
+             <h2>Informações Pessoais</h2>
+             <ul>
+                 <li><i class="fa-solid fa-cake-candles"></i> <strong>Data de Nascimento:</strong> 19/01/2006</li>
+                 <li><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> marcosytb61@gmail.com</li>
+                 <li><i class="fa-solid fa-phone"></i> <strong>Telefone:</strong> (83) 99683-8636</li>
+                 <li><i class="fa-solid fa-heart"></i> <strong>Status:</strong> Solteiro</li>
+             </ul>
+        </section>
+
+        <section id="projects" class="hidden">
+            <h2>Meus Projetos</h2>
+            <div class="project-card card">
+                <img src="to-do-list.jpg" alt="Print do projeto To-Do List">
+                <div class="project-info">
+                    <h3>To-Do List (Lista de Tarefas)</h3>
+                    <p>
+                        Desenvolvido do zero, a aplicação conta com um front-end em React e uma API RESTful em Node.js com Express, conectada a um banco de dados MySQL. O sistema inclui autenticação de usuários com JWT para garantir que cada pessoa tenha sua lista de tarefas privada.
+                    </p>
+                    <a href="https://github.com/Markin95" target="_blank" class="btn">Ver no GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
         </section>
 
-        <section id="contact">
-             <h2 class="section-title">Conecte-se Comigo</h2>
-             <p>Estou aberto a novas oportunidades e conexões. Encontre-me nas redes abaixo!</p>
-             <div class="social-links">
-                 <a href="https://github.com/Markin95" target="_blank" class="social-btn github">GitHub</a>
-                 <a href="https://www.linkedin.com/in/marcos-ferreirajr" target="_blank" class="social-btn linkedin">LinkedIn</a>
-             </div>
-        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Marcos Ferreira. Construído com dedicação.</p>
+        <div class="container">
+            <p>Conecte-se comigo:</p>
+            <div class="social-links">
+                <a href="https://github.com/Markin95" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/marcos-ferreirajr" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2024 Marcos Ferreira Jr. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
